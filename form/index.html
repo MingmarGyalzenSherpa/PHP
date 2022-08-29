@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title> FORM</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            input{
+                border-radius: 5px;
+                padding:5px 10px;
+            }
+            button{
+                border-radius:5px;
+                border:none;
+                padding: 5px 10px;
+                color:white;
+                font-weight: bold;
+                background-color: aqua;
+            }
+            button:hover{
+                background-color: lightblue;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            label{
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="welcome.php" method="GET">
+            <div class="input-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Name">
+            </div>
+           <div class="input-field">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" placeholder="Age">
+           </div>
+            <div class="btn-wrap">
+                <button type="submit">SUBMIT</button>
+            </div>
+            
+        </form>
+    </body>
+</html>
